@@ -37,7 +37,7 @@ namespace AngularAPI.Controllers
                     parametersq,
                     commandType: CommandType.StoredProcedure);
 
-                    if (result == "Login Successful")
+                    if (result == "Login Successful!")
                     {
                         return Ok(new { Message = result });
                     }
