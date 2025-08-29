@@ -37,7 +37,7 @@ namespace AngularAPI.Controllers
                     parametersq,
                     commandType: CommandType.StoredProcedure);
 
-                    if (result ==  "Login Successful")
+                    if (result == "Login Successful")
                     {
                         return Ok(new { Message = result });
                     }
@@ -48,7 +48,7 @@ namespace AngularAPI.Controllers
                 }
                 catch (SqlException ex)
                 {
-                    return StatusCode(500, new { Message = "An error occurred while processing the request 121.", Error = ex.Message });
+                    return StatusCode(500, new { Message = "An error occurred while processing the request 12.", Error = ex.Message });
                 }
             }
         }
